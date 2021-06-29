@@ -27,7 +27,7 @@
       },
       {
         "name": "RDS_PORT",
-        "value": "5432"
+        "value": "${rds_port}"
       },
       {
         "name": "RDS_DB_NAME",

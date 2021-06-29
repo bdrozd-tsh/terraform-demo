@@ -67,10 +67,11 @@ module "ecs_service_api" {
   resource_prefix                   = local.resource_prefix
   aws_region                        = var.aws_region
   rds_hostname                      = module.rds.rds_hostname
-  redis_url                         = module.redis.redis_url
   rds_db_name                       = var.rds_db_name
+  rds_port                          = 5432
   rds_username                      = var.rds_username
   rds_password                      = var.rds_password
+  redis_url                         = module.redis.redis_url
   app_name                          = var.app_name
   app_stage                         = var.app_stage
   logs_group_name                   = module.log_group.log_group_name

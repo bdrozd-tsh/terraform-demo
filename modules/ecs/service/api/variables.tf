@@ -60,8 +60,8 @@ variable "rds_hostname" {
   type = string
 }
 
-variable "redis_url" {
-  type = string
+variable "rds_port" {
+  type = number
 }
 
 variable "rds_username" {
@@ -69,6 +69,10 @@ variable "rds_username" {
 }
 
 variable "rds_password" {
+  type = string
+}
+
+variable "redis_url" {
   type = string
 }
 

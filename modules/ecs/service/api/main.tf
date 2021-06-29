@@ -29,10 +29,11 @@ resource "aws_ecs_task_definition" "api" {
     cpu              = var.cpu
     aws_region       = var.aws_region
     rds_hostname     = var.rds_hostname
-    redis_url        = var.redis_url
+    rds_port         = var.rds_port
     rds_db_name      = var.rds_db_name
     rds_username     = var.rds_username
     rds_password     = var.rds_password
+    redis_url        = var.redis_url
     app_name         = var.app_name
     app_stage        = var.app_stage
     aws_logs_group   = var.logs_group_name
